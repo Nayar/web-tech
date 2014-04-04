@@ -6,12 +6,13 @@ Install instructions
 --------------------
 1. Clone the project in your web server folder
 
-  On Ubuntu/Debian/Mint:
+  #### On Ubuntu/Debian/Mint:
 
     $ cd /var/www
+    
     $ git clone https://github.com/Nayar/web-tech/
 
-  Xampp on Windows:
+  #### Xampp on Windows:
 
     copy the folder contents into C:\xampp\htdocs
 
@@ -22,10 +23,10 @@ Install instructions
 
 Authors
 -------
-Nayar Joolfoo
-Humeira Diljore
-Basheerah Gauzee
+- Nayar Joolfoo
+- Humeira Diljore
+- Basheerah Gauzee
 
 License
 -------
-GNU/LGPL v3
+- GNU/LGPL v3
