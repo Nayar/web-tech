@@ -1,0 +1,146 @@
+<head>
+<title>Quick Recipe - Add Recipe</title>
+</head>
+<body>
+<form action="addrecipe.php" method="POST" enctype="multipart/form-data">
+<table border='0' align="center" id="addrecipetable">
+	<tr>
+		<td>
+			<b>Recipe Name:</b>
+		</td>
+		<td>
+			<input type="text" name="recipename" /><br />
+		</td>
+
+	</tr>
+	<tr>
+		<td>
+			<b>Recipe Description:</b>
+		</td>
+		<td>
+			<textarea rows="7" cols="50" name="description">
+		</textarea><br />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Category:</b>
+		</td>
+		<td>
+			<select name="cat_id">
+				<option value="1">Main dish</option>
+				<option value="2">Soup</option>
+				<option value="3">Dessert</option>
+				<option value="4">Salad</option>
+				<option value="5">Drinks</option>
+				<option value="6">Miscellaneous</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Preparation Time:</b>
+		</td>
+		<td>
+			<select name="duration_prep">
+				<option value="5">5 mins</option>
+				<option value="10">10 mins</option>
+				<option value="20">20 mins</option>
+				<option value="30">30 mins</option>
+				<option value="45">45 mins</option>
+				<option value="60">1 hr 00 mins</option>
+				<option value="75">1 hr 15 mins</option>
+				<option value="90">1 hr 30 mins</option>
+				<option value="105">1 hr 45 mins</option>
+			</select> 
+		</td>
+	<tr>
+		<td>
+			<b>Cooking Time:</b>
+		</td>
+		<td>
+			<select name="duration_cook">
+				<option value="5">5 mins</option>
+				<option value="10">10 mins</option>
+				<option value="20">20 mins</option>
+				<option value="30">30 mins</option>
+				<option value="45">45 mins</option>
+				<option value="60">1 hr 00 mins</option>
+				<option value="75">1 hr 15 mins</option>
+				<option value="90">1 hr 30 mins</option>
+				<option value="105">1 hr 45 mins</option>
+			</select>  
+		</td>
+	</tr>
+	</tr>
+	<tr>
+		<td>
+			<b>Serves:</b>
+		</td>
+		<td>
+			<select name="servings">
+				<option value="2">2</option>
+				<option value="4">4</option>
+				<option value="6">6</option>
+				<option value="8">8</option>
+			</select>  
+		</td>
+	<tr>
+		<td>
+			<b>Ingredients: </b>
+		</td>
+			
+		<td>
+			<b>Quantity: </b>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<tr>
+				<td><input type="text" name="ing[]" /><br /></td>
+				<td><input type="text" name="qty[]" /><br/></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="ing[]" /><br /></td>
+				<td><input type="text" name="qty[]" /><br/></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="ing[]" /><br /></td>
+				<td><input type="text" name="qty[]" /><br/></td>
+			</tr>
+			<!--<div style="float:left"><input type="text" name="ing[]" /></div>
+			<div style="float:left"><input type="text" name="qty[]" /></div>
+			<div style="clear:both"></div>-->
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<center><span style= "color: blue;font-size: 12px;text-decoration:underline" onclick="getmoreingrtable()">(Add more ingredients)</span></center>
+		</td>
+	</tr>
+	<tr>
+	<td><h4>Method:</h4></td>
+		<td>
+		<textarea rows="20" cols="50" name="method">
+			</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Image:</b></td>
+		<td>
+			<input type="file" name="recipeimage"/>
+		</td>
+	</tr>
+	<br /><br />
+	<tr>
+	<td colspan = "2" align = center>
+		<input type="submit" value="Submit" align="bottom"/><br>
+	</td>
+	<tr>
+	
+</table>
+
+</form>
+</body>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="theme/main.css" />
+<script type="text/javascript" src="main.js"></script>
+{$headerincludes}
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<img id = "logo" src ="theme/logo2.jpg" />
+			<h1><span id="sitename">Quick Recipe</span></h1>
+			<span id="welcome_user">{$templates->elements['welcome_user']}</span>
+			<div id="searchbox" style="clear: both;text-align:center;">
+				<form action="recipes.php" method="GET">
+				Search: <input type = "textbox" name="name" align= "center"/> 
+				<input type="submit" value="search" />
+				</form>
+			</div>
+			<div class="navbar" style="clear: both;">
+				<ul style="color: #FFFFFF;padding: 0;list-style-type: none;">
+					<li><a href="index.php">Home</a></li>
+					<li><a href="recipes.php">Recipes</a></li>
+					{$templates->elements['add_recipe_link']}
+					<li><a href="aboutus.php">About Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+{$contents}
+			<div id="footer">
+				Copyright © 2012 quickrecipe.mu
+			</div>
+		</div>
+	</div>
+</body> 
+</html>

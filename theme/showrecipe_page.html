@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Quick Recipe - {$recipe['name']}</title>
+<style type="text/css">
+	.ingredient_name
+	{
+		font-weight:bold;
+		text-transform:capitalize;
+	}
+</style>
+</head>
+<body>
+<table border="0" align="center">
+	<tr>
+		<td>
+			<thead>
+				<th>
+					<h2>{$recipe['name']}</h2>
+				</th>	
+			</thead>
+		</td>
+		<td>	
+			<center><img src= "{$recipe['imagelink']}" alt= "Image" width="245" height="245" border="2" style="border-radius:10px"/></center>
+		</td>
+		<td>
+			<b> Category:</b> <a href="recipes.php?cat_id={$recipe['cat_id']}">{$recipe['cat_name']}</a><br />
+			<b> Preparation time:</b> {$recipe['duration_prep']} mins<br />
+			<b> Cooking time:</b> {$recipe['duration_cook']} mins<br />
+			<b> Serves:</b> {$recipe['servings']}<br />
+			<b> Views:</b> {$recipe['views']}<br />
+		</td>
+	</tr>
+	<tr>
+		<td><h4><b> Description:</b></h4>
+				<tr>
+					<td>
+						{$recipe['description']}
+						<br />
+					</td>
+				</tr>	
+		 </td>
+	</tr>
+	<tr>
+
+		<td><h4><br /><b> Ingredients:</b></h4>
+				<tr>
+					<td>
+						{$ingredients}
+					</td>
+				</tr>	
+		 </td>
+	</tr>
+	<tr>
+		<td><h4><b> Method:</b></h4> </td>
+	</tr>
+	<tr>
+		<td width="500px">
+			{$recipe['method']}
+		</td>
+	</tr>
+		
+</table>
+</form>
+</body>
+</html>

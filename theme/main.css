@@ -1,0 +1,147 @@
+body
+{
+	background-image: url('bg2.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;	
+}
+
+#wrapper 
+{
+	margin-right: auto; 
+	margin-left: auto; 
+	width: 1067px;
+	background-color:rgb(183,219,255);
+ 	//background-color:#FF9900;
+}
+
+#header 
+{
+	padding: 10px;
+}
+
+#logo {
+	float:left;
+}
+
+#sitename 
+{
+	margin-left: 25px;
+	float:left;
+	font-size: 30px;
+}
+
+#welcome_user 
+{
+	margin-right: 15px;
+	float:right;
+}
+
+.navbar 
+{
+	text-align:center;
+	background-color: #AACCFF;
+}
+
+.navbar li
+{
+	display: inline;
+}
+
+.navbar li a
+{
+	font-size: x-large;
+	width:100px;
+	color: #000000;
+	//background-color: red;
+	//border-radius: 25px;
+}
+
+.navbar li.active,a:active ,a:hover
+{
+	background-color: #0055ff;
+	color: #FFFFFF; 
+	border-radius: 10px;
+}
+
+#sidepanel
+{
+	//width:180px;
+	float:left;
+}
+
+#sidebox
+{
+	//height:100px;
+	width:180px;
+	//float:left;
+	border:1px solid;
+	border-radius:10px;
+	-moz-border-radius:25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+#centrecontent 
+{
+	padding-left:50px;
+	width:570px;
+	//width: 800px;
+	float:left;
+	border:1px solid;
+	border-radius:25px;
+	-moz-border-radius:25px;
+	padding:15px 25px;
+}
+
+#geniuscook 
+{
+	text-align: center;
+	padding-bottom:10px; 
+	border: 1px solid;
+	border-radius:25px;
+	-moz-border-radius:25px;
+	padding:15px;
+	
+}
+
+div 
+{
+	//border: solid 1px;
+}
+	
+#footer 
+{
+	background-color:rgb(236,233,170);
+	clear:both;
+	text-align:center;
+	margin-top: 5px;
+} 
+
+#register_form 
+{
+	padding-top: 20px; 
+	padding-left: 300px;
+	//padding-right: 300px;
+	padding-bottom: 20px;
+}
+	
+.detail {
+	clear: both;
+	float: left;
+	width: 200px;
+	height: 25px;
+}
+
+.inputbox {
+	float:left;
+}
+
+.is_valid {
+	float:left;
+	padding: 2px;
+}

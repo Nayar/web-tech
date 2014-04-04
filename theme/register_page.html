@@ -1,0 +1,52 @@
+<head>
+<title>Quick Recipe - New User Registration</title>
+</head>
+<body>
+<h2>Register</h2><hr />
+<div id="register_form">
+	<div class="detail">
+		Username: 
+	</div>
+	<form name="register_form" action="register.php" method="POST" onsubmit="return validateregistrationdata()">
+	<div class="inputbox">
+		<input type="text" name="username" required="required" onkeyup="return checkusernameexist(this.value)" onblur="return checkusernameexist(this.value)"></input>
+	</div>
+	<div class="is_valid" id="is_valid_username"></div>
+	<div style="clear:both"></div>
+	<div class="detail">
+		Email: 
+	</div>
+	<div class="inputbox">
+		<input type="email" name="email" required="required"></input>
+	</div>
+	<div style="clear:both"></div>
+	<div class="detail">
+		Confirm Email: 
+	</div>
+	<div class="inputbox">
+		<input type="email" name="email1" required="required" onkeyup="checkfieldmatch('email','email1','is_same_email')"></input>
+	</div>
+	<div class="is_valid" id="is_same_email"></div>
+	<div style="clear:both"></div>
+	<div class="detail">
+		Password: 
+	</div>
+	<div class="inputbox">
+		<input type="password" name="password" required="required"></input>
+	</div>
+	<div style="clear:both"></div>
+	<div class="detail">
+		Confirm Password: 
+	</div>
+	<div class="inputbox">
+		<input type="password" name="password1" required="required" onkeyup="checkfieldmatch('password','password1','is_same_password')"></input>
+	</div>
+	<div class="is_valid" id="is_same_password"></div>
+	<div style="clear:both"></div><br />
+	<div style="margin-left:250px;">
+		<input type="submit" value="Confirm" name="Register"></input>
+	</div>
+	</form>
+</div>
+<br />
+</body>

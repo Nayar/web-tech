@@ -1,0 +1,30 @@
+<head>
+<title>Quick Recipe - Login</title>
+</head>
+<body>
+<h2>Login</h2><hr />
+<div id="register_form">
+	<div class="detail">
+		Username: 
+	</div>
+	<form action="login.php" method="POST" name="login_form" onsubmit="validateloginform()">
+	<div class="inputbox">
+		<input type="text" name="username" required="required" onkeyup="return checkusername(this.value,false)"></input>
+	</div>
+	<div class="is_valid" id="is_valid_username"></div>
+	<div style="clear:both"></div>
+	<div class="detail">
+		Password: 
+	</div>
+	<div class="inputbox">
+		<input type="password" name="password" required="required"></input>
+	</div>
+	<div style="clear:both"></div>
+	<br />
+	<div style="margin-left:250px;">
+		<input type="submit" value="Login" name="submit"></input>
+	</div>
+	</form>
+</div>
+<br />
+</body>
