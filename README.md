@@ -6,13 +6,14 @@ Install instructions
 --------------------
 1. Clone the project in your web server folder
 
-On Ubuntu/Debian/Mint:
+  On Ubuntu/Debian/Mint:
 
-$ cd /var/www
-$ git clone https://github.com/Nayar/web-tech/
+    $ cd /var/www
+    $ git clone https://github.com/Nayar/web-tech/
 
-Xampp on Windows:
-copy the folder contents into C:\xampp\htdocs
+  Xampp on Windows:
+
+    copy the folder contents into C:\xampp\htdocs
 
 2. Put your database connection credentials in ./inc/class_db.php
 
