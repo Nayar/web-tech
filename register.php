@@ -15,7 +15,7 @@ if(!isset($_POST['username'])){
 }
 else {
 	$success = false;
-	if (($_POST['email'] == $_POST['email1']) && ($_POST['password'] == $_POST['password1'])) {
+	if ((isset($_POST['email']) == (isset($_POST['email1'])) && (isset($_POST['password'])) == isset($_POST['password1'])))) {
 		$newuser = array(
 			"username" => $_POST['username'],
 			"email" => $_POST['email'],
