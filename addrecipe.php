@@ -19,17 +19,17 @@ require "inc/core.php";
 
 if(isset($_POST['recipename'])) {
 	$newrecipe = array(
-		"name" => $_POST['recipename'],
-		"method" => $_POST['method'],
-		"description" => $_POST['description'],
-		"duration_prep" => $_POST['duration_prep'],
-		"duration_cook" => $_POST['duration_cook'],
-		"servings" => $_POST['servings'],
-		"cat_id" => $_POST['cat_id'],
+		"name" => isset($_POST['recipename']),
+		"method" => isset($_POST['method']),
+		"description" => isset($_POST['description']),
+		"duration_prep" => isset($_POST['duration_prep']),
+		"duration_cook" => isset($_POST['duration_cook']),
+		"servings" => isset($_POST['servings']),
+		"cat_id" => isset($_POST['cat_id']),
 	);
 	
-	$ingredientname = $_POST['ing'];
-	$ingredientamt = $_POST['qty'];
+	$ingredientname = isset($_POST['ing']);
+	$ingredientamt = isset($_POST['qty']);
 	
 	$i = 0;
 	$ingredients = array();
