@@ -23,8 +23,8 @@ Install instructions
 
 Authors
 -------
-- Nayar Joolfoo
-- Humeira Diljore
+- [Nayar Joolfoo] (http://nayarweb.com)
+- [Humeira Diljore] (http://echdee.me)
 - Basheerah Gauzee
 
 License
